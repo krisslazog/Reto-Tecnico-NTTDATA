@@ -1,0 +1,71 @@
+/* Colores principales para el diseño */
+:root {
+    --color-primario: #002e5d;
+    --color-acento: #00a1de;
+    --fondo: #f4f4f4;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: var(--fondo); 
+    padding: 30px;
+    margin: 0;
+}
+
+/* Contenedor centrado */
+.contenedor-principal {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1 { 
+    color: var(--color-primario);
+    border-bottom: 3px solid var(--color-acento);
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+/* Flexbox para que los registros se vean en lista */
+#usuarios-lista { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+/* Estilo de cada tarjeta de usuario */
+.registro-usuario { 
+    display: flex; 
+    align-items: center; /* Alinea imagen con el texto */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Formato circular para la foto y evitar que se deforme */
+.registro-usuario img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    margin-right: 20px;
+    border: 2px solid var(--color-acento);
+    object-fit: cover; 
+}
+
+.datos h3 { 
+    margin: 0 0 5px 0; 
+    color: var(--color-primario);
+    text-transform: capitalize;
+}
+
+.datos p { 
+    margin: 2px 0; 
+    font-size: 14px;
+    color: #555;
+}
+
+/*Efecto*/
+.registro-usuario:hover {
+    background-color: #fdfdfd;
+    border-color: var(--color-acento);
+}
